@@ -42,6 +42,24 @@ function api_v1_cder2_partial_update(payload) {
 function api_v1_cder2_destroy(payload) {
   return vceedevAPI.delete(`/api/v1/cder2/${payload.id}/`)
 }
+function api_v1_cder3_list(payload) {
+  return vceedevAPI.get(`/api/v1/cder3/`)
+}
+function api_v1_cder3_create(payload) {
+  return vceedevAPI.post(`/api/v1/cder3/`, payload)
+}
+function api_v1_cder3_retrieve(payload) {
+  return vceedevAPI.get(`/api/v1/cder3/${payload.id}/`)
+}
+function api_v1_cder3_update(payload) {
+  return vceedevAPI.put(`/api/v1/cder3/${payload.id}/`, payload)
+}
+function api_v1_cder3_partial_update(payload) {
+  return vceedevAPI.patch(`/api/v1/cder3/${payload.id}/`, payload)
+}
+function api_v1_cder3_destroy(payload) {
+  return vceedevAPI.delete(`/api/v1/cder3/${payload.id}/`)
+}
 function api_v1_login_create(payload) {
   return vceedevAPI.post(`/api/v1/login/`, payload)
 }
@@ -95,6 +113,12 @@ export const apiService = {
   api_v1_cder2_update,
   api_v1_cder2_partial_update,
   api_v1_cder2_destroy,
+  api_v1_cder3_list,
+  api_v1_cder3_create,
+  api_v1_cder3_retrieve,
+  api_v1_cder3_update,
+  api_v1_cder3_partial_update,
+  api_v1_cder3_destroy,
   api_v1_login_create,
   api_v1_signup_create,
   rest_auth_login_create,
