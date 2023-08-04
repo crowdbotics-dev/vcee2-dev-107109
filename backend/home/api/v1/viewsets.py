@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import Cder,Cder2,Cder2,Cder2
-from .serializers import CderSerializer,Cder2Serializer,Cder2Serializer,Cder2Serializer
+from home.models import Cder,Cder2,Cder3,Cder,Cder3,Cder,Cder3
+from .serializers import CderSerializer,Cder2Serializer,Cder3Serializer,CderSerializer,Cder3Serializer,CderSerializer,Cder3Serializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -42,3 +42,8 @@ class Cder2ViewSet(viewsets.ModelViewSet):
     serializer_class = Cder2Serializer
     authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
     queryset = Cder2.objects.all()
+
+class Cder3ViewSet(viewsets.ModelViewSet):
+    serializer_class = Cder3Serializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Cder3.objects.all()

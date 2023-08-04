@@ -8,3 +8,7 @@ class Cder2(models.Model):
     'Generated Model'
     jfhf = models.BigIntegerField()
     rewt = models.BigIntegerField()
+class Cder3(models.Model):
+    'Generated Model'
+    hfhfh = models.BigIntegerField()
+    retey = models.BigIntegerField()
