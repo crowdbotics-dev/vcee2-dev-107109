@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import Cder,Cder2,Cder3,Cder,Cder3
+from home.models import Cder,Cder2,Cder3,Cder4,Cder,Cder4
 from django.http import HttpRequest
 from django.utils.translation import ugettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -92,4 +92,10 @@ class Cder3Serializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cder3
+        fields = "__all__"
+
+class Cder4Serializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Cder4
         fields = "__all__"

@@ -12,3 +12,7 @@ class Cder3(models.Model):
     'Generated Model'
     hfhfh = models.BigIntegerField()
     retey = models.BigIntegerField()
+class Cder4(models.Model):
+    'Generated Model'
+    hfhfh = models.BigIntegerField()
+    teyey = models.BigIntegerField()
